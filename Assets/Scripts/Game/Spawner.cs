@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
         if(_Spawntimer <= 0)
         {
             _Spawntimer = _SpawnInterval;
-            SpawnEnemy();
+            //SpawnEnemy();
 
 
         
