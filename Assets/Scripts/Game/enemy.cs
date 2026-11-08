@@ -22,8 +22,15 @@ public class enemy : MonoBehaviour
         float relativeDistance = (transform.position - _targetPosition).magnitude;
         if (relativeDistance < 0.1f)
         {
-            _currentwaypoint++;
-            _targetPosition = currentPath.GetPosition(_currentwaypoint);
+            if (_currentwaypoint < currentPath.waypoint.Length - 1)
+            {
+                _currentwaypoint++;
+                _targetPosition = currentPath.GetPosition(_currentwaypoint);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
 
         }
     }
