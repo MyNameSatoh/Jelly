@@ -28,4 +28,16 @@ public class NewMonoBehaviourScript : MonoBehaviour
         _pool.Add(obj);   
         return obj;
     }
+
+    public GameObject GetPooleObject()
+    {
+        foreach(GameObject obj in _pool)
+        {
+            if (!obj.activeSelf)
+            {
+                return obj;
+            }
+        }
+        return CreateNewObject();
+    }
 }
