@@ -6,7 +6,7 @@ public class enemy : Object
     [SerializeField] private Path currentPath;
     private Vector3 _targetPosition;
     private int _currentwaypoint;
-    private void Awake()
+    protected override void Awake()
     {
         currentPath = GameObject.Find("Path1").GetComponent<Path>();
     }
