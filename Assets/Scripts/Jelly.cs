@@ -7,10 +7,6 @@ public class Jelly : Object
     [SerializeField] private bool isDetected = false;
     [SerializeField] private int direction = 1;// include clockwise and  counterclockwise
     [SerializeField] private float count = 0;
-    public override void Attack(Object target)
-    {
-        base.Attack(target);
-    }
     private void Update()
     {
         Spin();
