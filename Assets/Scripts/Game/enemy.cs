@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class enemy : MonoBehaviour
+public class enemy : Object
 {
     [SerializeField] private float MoveSpeed = 1f;
     [SerializeField] private Path currentPath;
@@ -33,5 +33,10 @@ public class enemy : MonoBehaviour
             }
 
         }
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.GetComponent<Base>()) return;
+        collision.gameObject.GetComponent<Object>().ReceiveDamage(this);
     }
 }
