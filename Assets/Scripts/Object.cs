@@ -15,4 +15,9 @@ public class Object : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    public virtual void Attack(Object target)
+    {
+        if (target == null) return;
+        target.ReceiveDamage(this);
+    }
 }

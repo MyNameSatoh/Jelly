@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 public class LibraryManager : MonoBehaviour
 {
+    [Serializable]
     public struct ObjectAttributes
     {
         //basic attribute, which set up initial stats for mobs
