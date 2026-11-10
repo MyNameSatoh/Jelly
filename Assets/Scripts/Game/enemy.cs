@@ -29,7 +29,7 @@ public class enemy : Object
             }
             else
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
 
         }

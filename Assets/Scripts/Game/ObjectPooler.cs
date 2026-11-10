@@ -3,9 +3,9 @@ using System.Reflection;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ObjectPooler : MonoBehaviour
 {
-    public GameObject[] Enemy;
+    public GameObject Enemy;
     [SerializeField] private int poolSize = 5;
     private List<GameObject> _pool;
 
@@ -21,9 +21,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     }
     private GameObject CreateNewObject()
     {
-        int randomEnemy = Random.Range(0, Enemy.Length);
 
-        GameObject obj = Instantiate(Enemy[randomEnemy], transform);
+        GameObject obj = Instantiate(Enemy, transform);
         obj.SetActive(false); 
         _pool.Add(obj);   
         return obj;

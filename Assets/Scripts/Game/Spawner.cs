@@ -4,7 +4,8 @@ public class Spawner : MonoBehaviour
 {
     private float _Spawntimer, _SpawnInterval = 3f;
 
-    public GameObject[] Enemy;
+    public GameObject Enemy;
+    [SerializeField] private ObjectPooler pool;
 
     void Update()
     {
@@ -21,9 +22,8 @@ public class Spawner : MonoBehaviour
     }
     private void SpawnEnemy()
     {
-        int randomEnemy = Random.Range(0, Enemy.Length);
-        GameObject SpawnedObject = GameObject.Instantiate(Enemy[randomEnemy]);
+        GameObject SpawnedObject = pool.GetPooleObject();
         SpawnedObject.transform.position = transform.position;
-        
+        SpawnedObject.SetActive(true);
     }
 }
