@@ -185,5 +185,4 @@ MonoBehaviour:
     range: 0
     curHp: 0
   initialAttributes: {fileID: 11400000, guid: 31ae76d8f3834054daa7056780372c2e, type: 2}
-  MoveSpeed: 3
-  currentPath: {fileID: 0}
+  data: {fileID: 11400000, guid: a08e3cf2f4b82704eb6802f9e2a71f51, type: 2}

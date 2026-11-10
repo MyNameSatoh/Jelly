@@ -112,8 +112,7 @@ MonoBehaviour:
     range: 0
     curHp: 0
   initialAttributes: {fileID: 11400000, guid: 31ae76d8f3834054daa7056780372c2e, type: 2}
-  MoveSpeed: 3
-  currentPath: {fileID: 0}
+  data: {fileID: 11400000, guid: 2f6c0228c64e4d848a6f3e5b7d9404fc, type: 2}
 --- !u!50 &3793208984926720883
 Rigidbody2D:
   serializedVersion: 5
