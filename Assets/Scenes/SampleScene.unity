@@ -883,8 +883,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb48c3c67b8e0744ab484e7a85d70e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wave:
+  - {fileID: 11400000, guid: b2bcf0103052b4c4c935cc6db12c1ac3, type: 2}
+  - {fileID: 11400000, guid: fc0ebb3ceb68c014ba42eda6f2a27822, type: 2}
+  - {fileID: 11400000, guid: d489bf0c291448248ab3251aeda1e437, type: 2}
   Enemy: {fileID: 2901881152870812148, guid: b13cc212197f6714eae2975c1fd36554, type: 3}
-  pool: {fileID: 1851177411}
+  Enemy1pool: {fileID: 1851177411}
+  Enemy2pool: {fileID: 312486473}
+  Enemy3pool: {fileID: 789073688}
 --- !u!4 &1352892636
 Transform:
   m_ObjectHideFlags: 0
